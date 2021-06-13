@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_menu"
+    tools:context=".MainActivity">
+    <!--лучше указывать не в px в dp
+    формула dp = px / (dpi / 160)
+    у нас dpi = 420, значит
+    dp = px / 2,625-->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="65px"
+
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="36dp"
+        android:background="@color/white"
+        />
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="1080.03dp"
+        android:layout_height="1742.24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/rectangle_1"
+        />
+
+    <!--это колхозный закрывающий прямоуголник снизу-->
+    <View
+        android:id="@+id/rectangle_0"
+        android:layout_width="1080.03dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="500dp"
+        android:background="@color/white"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/element_main_menu"
+        android:text="Button" />
+
+
+</RelativeLayout>
+

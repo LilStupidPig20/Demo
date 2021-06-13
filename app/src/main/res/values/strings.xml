@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="first_el_main">Устройство кофемашины</string>
+    <string name="second_el_main">Работа с кофемолкой</string>
+    <string name="third_el_main">Взбивание молока</string>
+    <string name="fourth_el_main">Приготовление напитков</string>
+    <string name="description_first_el_main">В этом курсе вы изучите устройство кофемашины</string>
+    <string name="description_second_el_main">В этом курсе вы изучите работу с кофемолкой</string>
+    <string name="description_third_el_main">В этом курсе вы изучите взбивание молока</string>
+    <string name="description_fourth_el_main">В этом курсе вы изучите приготовление напитков</string>
+</resources>
