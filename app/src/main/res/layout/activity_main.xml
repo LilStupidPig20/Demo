@@ -35,24 +35,25 @@
     <!--это колхозный закрывающий прямоуголник снизу-->
     <View
         android:id="@+id/rectangle_0"
-        android:layout_width="1080.03dp"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="500dp"
-        android:background="@color/white"
-        />
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="580dp"
+        android:background="@color/white" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="276px"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
+        android:stateListAnimator="@null"
         android:backgroundTint="@color/element_main_menu"
-        android:shadowRadius="5px"
-        android:text="Button" />
+        android:text="Button"
+        />
 
 
 </RelativeLayout>

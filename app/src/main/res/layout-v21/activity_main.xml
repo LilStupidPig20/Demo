@@ -44,14 +44,11 @@
         />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:backgroundTint="@color/element_main_menu"
-        android:text="Button" />
+        android:background="@drawable/button_1_main_list"
+        android:text="" />
 
 
 </RelativeLayout>
