@@ -24,11 +24,11 @@
 
     <View
         android:id="@+id/rectangle_1"
-        android:layout_width="1080.03dp"
-        android:layout_height="1742.24dp"
+        android:layout_width="1080px"
+        android:layout_height="1742px"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="179px"
         android:background="@drawable/rectangle_1"
         />
 
@@ -44,12 +44,51 @@
         />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button1_main_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="276px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="52px"
         android:background="@drawable/button_1_main_list"
-        android:text="" />
+        android:stateListAnimator="@null"
+        />
 
+    <Button
+        android:id="@+id/button2_main_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="52px"
+        android:layout_below="@id/button1_main_list"
+        android:layout_marginTop="37px"
+        android:background="@drawable/button_1_main_list"
+        android:stateListAnimator="@null"
+        />
+
+    <Button
+        android:id="@+id/button3_main_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="52px"
+        android:layout_below="@id/button2_main_list"
+        android:layout_marginTop="37px"
+        android:background="@drawable/button_1_main_list"
+        android:stateListAnimator="@null"
+        />
+
+    <Button
+        android:id="@+id/button4_main_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="52px"
+        android:layout_below="@id/button3_main_list"
+        android:layout_marginTop="37px"
+        android:background="@drawable/button_1_main_list"
+        android:stateListAnimator="@null"
+        />
 
 </RelativeLayout>
 

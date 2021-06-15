@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_menu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_menu"
@@ -16,21 +17,19 @@
         android:layout_width="match_parent"
         android:layout_height="65px"
 
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginRight="36dp"
-        android:background="@color/white"
-        />
+        android:layout_marginLeft="94px"
+        android:layout_marginTop="57px"
+        android:layout_marginRight="94px"
+        android:background="@color/white" />
 
     <View
         android:id="@+id/rectangle_1"
-        android:layout_width="1080.03dp"
-        android:layout_height="1742.24dp"
+        android:layout_width="1080px"
+        android:layout_height="1742px"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="68dp"
-        android:background="@drawable/rectangle_1"
-        />
+        android:layout_marginTop="178px"
+        android:background="@drawable/rectangle_1" />
 
     <!--это колхозный закрывающий прямоуголник снизу-->
     <View
@@ -44,16 +43,52 @@
         android:background="@color/white" />
 
     <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+
+        android:layout_height="322px"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="270px"
+        android:layout_marginRight="52px"
+        android:backgroundTint="@color/element_main_menu"
+        android:stateListAnimator="@null"
+        android:text="Button" />
+
+    <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="276px"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:stateListAnimator="@null"
+        android:layout_height="322px"
+        android:layout_below="@id/button1"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="37px"
+        android:layout_marginRight="52px"
         android:backgroundTint="@color/element_main_menu"
-        android:text="Button"
-        />
+        android:stateListAnimator="@null"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="322px"
+        android:layout_below="@id/button2"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="37px"
+        android:layout_marginRight="52px"
+        android:backgroundTint="@color/element_main_menu"
+        android:stateListAnimator="@null"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="322px"
+        android:layout_below="@id/button3"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="37px"
+        android:layout_marginRight="52px"
+        android:backgroundTint="@color/element_main_menu"
+        android:stateListAnimator="@null"
+        android:text="Button" />
 
 
 </RelativeLayout>
