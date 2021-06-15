@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Demo</string>
-    <string name="first_el_main">Устройство кофемашины</string>
+    <string name="first_el_main">
+        Устройство \r\nкофемашины</string>
     <string name="second_el_main">Работа с кофемолкой</string>
     <string name="third_el_main">Взбивание молока</string>
     <string name="fourth_el_main">Приготовление напитков</string>

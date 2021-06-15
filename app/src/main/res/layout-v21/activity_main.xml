@@ -43,52 +43,254 @@
         android:background="@color/white"
         />
 
+    <!--Первая кнопка-->
     <Button
         android:id="@+id/button1_main_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="276px"
         android:layout_marginLeft="50px"
+        android:layout_marginTop="276px"
         android:layout_marginRight="52px"
         android:background="@drawable/button_1_main_list"
         android:stateListAnimator="@null"
+        app:backgroundTint="@color/element_main_menu" />
+
+    <View
+        android:id="@+id/circle1_button_main"
+        android:layout_width="223px"
+        android:layout_height="202px"
+        android:layout_below="@id/button1_main_list"
+        android:layout_marginTop="-262px"
+        android:layout_marginLeft="100px"
+        android:background="@drawable/circle_decoration_mainmenu"
         />
 
+    <ImageView
+        android:id="@+id/img_machine"
+        android:layout_width="197px"
+        android:layout_height="201px"
+        app:srcCompat="@drawable/machine_img"
+        android:layout_marginTop="333px"
+        android:layout_marginLeft="113px"/>
+
+    <TextView
+        android:id="@+id/bold_text_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/exo_2"
+        android:text="Устройство \nкофемашины"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="52px"
+        android:textFontWeight="600"
+        android:lineHeight="63px"
+        android:layout_marginTop="312px"
+        android:layout_marginLeft="370px"/>
+
+    <TextView
+        android:id="@+id/normal_text_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bold_text_button1"
+        android:layout_marginLeft="370px"
+        android:layout_marginTop="18px"
+        android:fontFamily="@font/exo_2_thin"
+        android:lineHeight="47px"
+        android:text="В этом курсе вы изучите \nустройство кофемашины"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textFontWeight="240"
+        android:textSize="39px" />
+    <!--Конец первой кнопки-->
+
+    <!--Вторая кнопка-->
     <Button
         android:id="@+id/button2_main_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50px"
-        android:layout_marginRight="52px"
         android:layout_below="@id/button1_main_list"
+        android:layout_marginLeft="50px"
         android:layout_marginTop="37px"
+        android:layout_marginRight="52px"
         android:background="@drawable/button_1_main_list"
         android:stateListAnimator="@null"
+        app:backgroundTint="@color/element_main_menu" />
+
+    <View
+        android:id="@+id/circle2_button_main"
+        android:layout_width="223px"
+        android:layout_height="202px"
+        android:layout_below="@id/button1_main_list"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="100px"
+        android:background="@drawable/circle_decoration_mainmenu"
         />
 
+    <ImageView
+        android:id="@+id/img_molka"
+        android:layout_width="197px"
+        android:layout_height="206px"
+        app:srcCompat="@drawable/molka_img"
+        android:layout_below="@id/button1_main_list"
+        android:layout_marginTop="98px"
+        android:layout_marginLeft="100px"/>
+
+    <TextView
+        android:id="@+id/bold_text_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1_main_list"
+        android:fontFamily="@font/exo_2"
+        android:text="Работа с \nкофемолкой"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="52px"
+        android:textFontWeight="600"
+        android:lineHeight="63px"
+        android:layout_marginTop="77px"
+        android:layout_marginLeft="370px"/>
+
+    <TextView
+        android:id="@+id/normal_text_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bold_text_button2"
+        android:layout_marginLeft="370px"
+        android:layout_marginTop="18px"
+        android:fontFamily="@font/exo_2_thin"
+        android:lineHeight="47px"
+        android:text="В этом курсе вы изучите \nработу с кофемолкой"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textFontWeight="240"
+        android:textSize="39px" />
+    <!--Конец второй кнопки-->
+
+    <!--Третья кнопка-->
     <Button
         android:id="@+id/button3_main_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50px"
-        android:layout_marginRight="52px"
         android:layout_below="@id/button2_main_list"
+        android:layout_marginLeft="50px"
         android:layout_marginTop="37px"
+        android:layout_marginRight="52px"
         android:background="@drawable/button_1_main_list"
         android:stateListAnimator="@null"
+        app:backgroundTint="@color/element_main_menu" />
+
+    <View
+        android:id="@+id/circle3_button_main"
+        android:layout_width="223px"
+        android:layout_height="202px"
+        android:layout_below="@id/button2_main_list"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="100px"
+        android:background="@drawable/circle_decoration_mainmenu"
         />
 
+    <ImageView
+        android:id="@+id/img_milk"
+        android:layout_width="197px"
+        android:layout_height="206px"
+        app:srcCompat="@drawable/milk_img"
+        android:layout_below="@id/button2_main_list"
+        android:layout_marginTop="93px"
+        android:layout_marginLeft="113px"/>
+
+    <TextView
+        android:id="@+id/bold_text_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button2_main_list"
+        android:fontFamily="@font/exo_2"
+        android:text="Взбивание \nмолока"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="52px"
+        android:textFontWeight="600"
+        android:lineHeight="63px"
+        android:layout_marginTop="77px"
+        android:layout_marginLeft="370px"/>
+
+    <TextView
+        android:id="@+id/normal_text_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bold_text_button3"
+        android:layout_marginLeft="370px"
+        android:layout_marginTop="18px"
+        android:fontFamily="@font/exo_2_thin"
+        android:lineHeight="47px"
+        android:text="В этом курсе вы изучите \nвзбивание молока"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textFontWeight="240"
+        android:textSize="39px" />
+    <!--Конец третьей кнопки-->
+
+    <!--Четвертая кнопка-->
     <Button
         android:id="@+id/button4_main_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50px"
-        android:layout_marginRight="52px"
         android:layout_below="@id/button3_main_list"
+        android:layout_marginLeft="50px"
         android:layout_marginTop="37px"
+        android:layout_marginRight="52px"
         android:background="@drawable/button_1_main_list"
         android:stateListAnimator="@null"
+        app:backgroundTint="@color/element_main_menu" />
+
+    <View
+        android:id="@+id/circle4_button_main"
+        android:layout_width="223px"
+        android:layout_height="202px"
+        android:layout_below="@id/button3_main_list"
+        android:layout_marginTop="100px"
+        android:layout_marginLeft="100px"
+        android:background="@drawable/circle_decoration_mainmenu"
         />
+
+    <ImageView
+        android:id="@+id/img_coffee"
+        android:layout_width="197px"
+        android:layout_height="206px"
+        app:srcCompat="@drawable/coffe_img"
+        android:layout_below="@id/button3_main_list"
+        android:layout_marginTop="96px"
+        android:layout_marginLeft="113px"/>
+
+    <TextView
+        android:id="@+id/bold_text_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button3_main_list"
+        android:fontFamily="@font/exo_2"
+        android:text="Приготовление \nнапитков"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="52px"
+        android:textFontWeight="600"
+        android:lineHeight="63px"
+        android:layout_marginTop="77px"
+        android:layout_marginLeft="370px"/>
+
+    <TextView
+        android:id="@+id/normal_text_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bold_text_button4"
+        android:layout_marginLeft="370px"
+        android:layout_marginTop="18px"
+        android:fontFamily="@font/exo_2_thin"
+        android:lineHeight="47px"
+        android:text="В этом курсе вы изучите \nприготовление напитков"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textFontWeight="240"
+        android:textSize="39px" />
+    <!--Конец четвертой кнопки-->
 
 </RelativeLayout>
 
