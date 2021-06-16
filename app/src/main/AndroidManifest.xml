@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Demo">
-        <activity android:name=".MainCoffeeActivity"></activity>
+        <activity android:name=".MainActivityCoffeeMachine"></activity>
+        <activity android:name=".MainActivityCoffeeGrinder" />
+        <activity android:name=".MainActivityMilk" />
+        <activity android:name=".MainCoffeeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
