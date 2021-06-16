@@ -190,8 +190,8 @@
         android:layout_width="84dp"
         android:layout_height="38dp"
         android:layout_alignStart="@+id/button6_main_list"
-        android:layout_alignLeft="@+id/button6_main_list"
-        android:layout_alignTop="@+id/button6_main_list"
+        android:layout_alignLeft="@id/button6_main_list"
+        android:layout_alignTop="@id/button6_main_list"
         android:layout_marginStart="47.3px"
         android:layout_marginLeft="47.3px"
         android:layout_marginTop="29.12px"
@@ -210,7 +210,7 @@
         android:layout_marginEnd="97dp"
         android:layout_marginRight="97dp"
         android:layout_toEndOf="@+id/imageView4"
-        android:layout_toRightOf="@+id/imageView4"
+        android:layout_toRightOf="@id/imageView4"
         android:text="ЭСПРЕССО"
         android:textColor="#000000"
         android:textSize="30sp" />
@@ -246,7 +246,7 @@
         android:layout_marginEnd="138dp"
         android:layout_marginRight="138dp"
         android:layout_toEndOf="@+id/imageView8"
-        android:layout_toRightOf="@+id/imageView8"
+        android:layout_toRightOf="@id/imageView8"
         android:text="ЛАТТЕ"
         android:textColor="#000000"
         android:textSize="30sp" />
@@ -258,11 +258,11 @@
         android:layout_alignTop="@+id/button5_main_list"
         android:layout_alignEnd="@+id/button5_main_list"
         android:layout_alignRight="@+id/button5_main_list"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="29.12px"
-        android:layout_marginEnd="168dp"
-        android:layout_marginRight="168dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginRight="170dp"
         android:layout_toEndOf="@+id/imageView9"
         android:layout_toRightOf="@+id/imageView9"
         android:text="РАФ"
@@ -330,16 +330,15 @@
         android:fontFamily="@font/annie_use_your_telescope"
         android:text="1"
         android:textColor="#000000"
-        android:textSize="48sp"
-        app:fontVariationSettings="Annie Use Your Telescope" />
+        android:textSize="48sp" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView6"
-        android:layout_alignLeft="@+id/imageView6"
-        android:layout_alignTop="@+id/imageView6"
+        android:layout_alignLeft="@id/imageView6"
+        android:layout_alignTop="@id/imageView6"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
         android:layout_marginTop="-19dp"
@@ -353,8 +352,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView7"
-        android:layout_alignLeft="@+id/imageView7"
-        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignLeft="@id/imageView7"
+        android:layout_alignTop="@id/imageView7"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
         android:layout_marginTop="-19dp"
@@ -383,7 +382,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView9"
-        android:layout_alignLeft="@+id/imageView9"
+        android:layout_alignLeft="@id/imageView9"
         android:layout_alignTop="@+id/imageView9"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
@@ -411,4 +410,3 @@
     <!--Конец четвертой кнопки-->
 
 </RelativeLayout>
-
