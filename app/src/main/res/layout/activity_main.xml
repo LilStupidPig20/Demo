@@ -52,7 +52,7 @@
         android:layout_marginRight="52px"
         android:backgroundTint="@color/element_main_menu"
         android:stateListAnimator="@null"
-        android:text="Button" />
+        android:text="Button1" />
 
     <Button
         android:id="@+id/button2"
