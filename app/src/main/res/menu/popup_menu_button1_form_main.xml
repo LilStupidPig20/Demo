@@ -11,4 +11,5 @@
             android:id="@+id/item3"
             android:title="Практика">
         </item>
+
 </menu>
