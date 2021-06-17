@@ -8,11 +8,13 @@ import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
     private  Button buttonCoffee;
     private  Button buttonCoffeeGrinder;
     private  Button buttonCoffeeMachine;
@@ -43,13 +45,13 @@ public class MainActivity extends AppCompatActivity {
                 openActivityCoffeeGrinder();
             }
         });
-        buttonCoffeeMachine = (Button) findViewById(R.id.button1_main_list);
+        /*buttonCoffeeMachine = (Button) findViewById(R.id.button1_main_list);
         buttonCoffeeMachine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivityCoffeeMachine();
             }
-        });
+        });*/
         buttonMilk = (Button) findViewById(R.id.button3_main_list);
         buttonMilk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,4 +78,32 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openActivityMachineTest(){
+        Intent intent = new Intent(this, Activity_Machine_Test.class);
+        startActivity(intent);
+    }
+
+    public void showPopup1(View v){
+        PopupMenu popup = new PopupMenu(this, v);
+        popup.setOnMenuItemClickListener(this);
+        popup.inflate(R.menu.popup_menu_button1_form_main);
+        popup.show();
+    }
+
+    @Override
+    public boolean onMenuItemClick(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item1:
+                openActivityCoffeeMachine();
+                return true;
+            case R.id.item2:
+                openActivityMachineTest();
+                return true;
+            case R.id.item3:
+                //тут переход на сцену с практикой машины
+                return true;
+            default:
+                return false;
+        }
+    }
 }

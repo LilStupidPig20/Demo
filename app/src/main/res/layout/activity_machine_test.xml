@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_menu"
-    tools:context=".MainActivityCoffeeMachine">
+    tools:context=".Activity_Machine_Test">
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -41,12 +41,30 @@
         />
 
     <View
-        android:id="@+id/heading_rectangle"
+        android:id="@+id/rect1_test"
         android:layout_width="404px"
-        android:layout_height="184px"
+        android:layout_height="115px"
+        android:background="@drawable/header1_for_test_windows"
         android:layout_marginTop="250px"
         android:layout_marginLeft="338px"
-        android:background="@drawable/heading_rectangle_for_common_windows"
+        />
+
+    <View
+        android:id="@+id/rect2_test"
+        android:layout_width="404px"
+        android:layout_height="115px"
+        android:background="@drawable/header2_for_test_windows"
+        android:layout_below="@id/rect1_test"
+        android:layout_marginLeft="338px"
+        />
+
+    <View
+        android:id="@+id/line_test"
+        android:layout_width="404px"
+        android:layout_height="2px"
+        android:background="@drawable/line_for_test_windows"
+        android:layout_below="@id/rect1_test"
+        android:layout_marginLeft="338px"
         />
 
     <TextView
@@ -59,16 +77,21 @@
         android:textFontWeight="600"
         android:textSize="52px"
         android:textColor="@color/black"
-        android:layout_marginTop="300px"
-        android:layout_marginLeft="350px"/>
+        android:layout_marginTop="270px"
+        android:layout_marginLeft="355px"/>
 
     <TextView
-        android:id="@+id/text1_machine_test"
+        android:id="@+id/below_heading_text_machine_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/heading_rectangle"
-        android:layout_marginTop="74px"
-        android:layout_marginLeft="95px"
-        />
+        android:layout_below="@id/line_test"
+        android:layout_marginLeft="430px"
+        android:layout_marginTop="18px"
+        android:fontFamily="@font/exo_2"
+        android:lineHeight="63px"
+        android:text="ТЕСТ 1/3"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:textSize="52px" />
 
 </RelativeLayout>
