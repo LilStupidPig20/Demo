@@ -42,56 +42,128 @@
 
     <View
         android:id="@+id/rect1_test"
-        android:layout_width="404px"
-        android:layout_height="115px"
-        android:background="@drawable/header1_for_test_windows"
-        android:layout_marginTop="250px"
+        android:layout_width="191dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/rectangle_1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_marginLeft="338px"
-        />
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        android:background="@drawable/header1_for_test_windows"
+        android:foregroundGravity="center" />
 
     <View
         android:id="@+id/rect2_test"
-        android:layout_width="404px"
-        android:layout_height="115px"
-        android:background="@drawable/header2_for_test_windows"
+        android:layout_width="191dp"
+        android:layout_height="43dp"
         android:layout_below="@id/rect1_test"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_marginLeft="338px"
-        />
-
-    <View
-        android:id="@+id/line_test"
-        android:layout_width="404px"
-        android:layout_height="2px"
-        android:background="@drawable/line_for_test_windows"
-        android:layout_below="@id/rect1_test"
-        android:layout_marginLeft="338px"
-        />
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        android:background="@drawable/header2_for_test_windows" />
 
     <TextView
         android:id="@+id/heading_text_machine_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rect1_test"
+        android:layout_alignEnd="@+id/rect2_test"
+        android:layout_alignRight="@+id/rect2_test"
+        android:layout_marginLeft="355px"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
         android:fontFamily="@font/exo_2_semibold"
         android:lineHeight="63px"
         android:text="КОФЕМАШИНА"
-        android:textFontWeight="600"
-        android:textSize="52px"
         android:textColor="@color/black"
-        android:layout_marginTop="270px"
-        android:layout_marginLeft="355px"/>
+        android:textFontWeight="600"
+        android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/below_heading_text_machine_test"
+    <RadioButton
+        android:id="@+id/radioButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/line_test"
-        android:layout_marginLeft="430px"
-        android:layout_marginTop="18px"
-        android:fontFamily="@font/exo_2"
-        android:lineHeight="63px"
-        android:text="ТЕСТ 1/3"
-        android:textColor="@color/black"
-        android:textFontWeight="400"
-        android:textSize="52px" />
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginRight="158dp"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        android:gravity="center|center_vertical"
+        android:text="100°C"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginRight="158dp"
+        android:foregroundGravity="center"
+        android:gravity="center|center_vertical"
+        android:text="110°C"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButton2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginRight="158dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="120°C"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioButton3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginRight="158dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="140°C"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rect2_test"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:autoText="false"
+        android:gravity="center"
+        android:text="В какой из вариантов написана безопасная температура работы кофемашина?"
+        android:textColor="#000000"
+        android:textSize="24sp" />
 
 </RelativeLayout>
