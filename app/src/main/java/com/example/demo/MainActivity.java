@@ -3,16 +3,19 @@ package com.example.demo;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
@@ -75,17 +78,8 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
         Intent intent = new Intent(this, MainActivityCoffeeGrinder.class);
         startActivity(intent);
     }
-    public void openActivityCoffeeMachine(){
-        Intent intent = new Intent(this, MainActivityCoffeeMachine.class);
-        startActivity(intent);
-    }
     public void openActivityMilk(){
         Intent intent = new Intent(this, MainActivityMilk.class);
-        startActivity(intent);
-    }
-
-    public void openActivityMachineTest(){
-        Intent intent = new Intent(this, Activity_Machine_Test.class);
         startActivity(intent);
     }
 
@@ -120,7 +114,7 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
         // inflate the layout of the popup window
         LayoutInflater inflater = (LayoutInflater)
                 getSystemService(LAYOUT_INFLATER_SERVICE);
-        View popupView = inflater.inflate(R.layout.popup_from_main_menu, null);
+        View popupView = inflater.inflate(R.layout.activity_popup_window_from_main_menu, null);
 
         // create the popup window
         int width = LinearLayout.LayoutParams.WRAP_CONTENT;
@@ -130,7 +124,10 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
 
         // show the popup window
         // which view you pass in doesn't matter, it is only used for the window tolken
-        popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0);
+        //popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0); это было изначально
+        popupWindow.showAtLocation(view, Gravity.BOTTOM|Gravity.LEFT, 0, 0);
+
+        dimBehind(popupWindow);
 
         // dismiss the popup window when touched
         popupView.setOnTouchListener(new View.OnTouchListener() {
@@ -141,8 +138,14 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
             }
         });
     }
-    public  boolean onCrateOptionsMenuCoffeeMachine(Menu menu){
-        getMenuInflater().inflate(R.menu.popup_menu_button1_form_main, menu);
-        return true;
+
+    public static void dimBehind(PopupWindow popupWindow) {
+        View container = popupWindow.getContentView().getRootView();
+        Context context = popupWindow.getContentView().getContext();
+        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        WindowManager.LayoutParams p = (WindowManager.LayoutParams) container.getLayoutParams();
+        p.flags |= WindowManager.LayoutParams.FLAG_DIM_BEHIND;
+        p.dimAmount = 0.3f;
+        wm.updateViewLayout(container, p);
     }
 }

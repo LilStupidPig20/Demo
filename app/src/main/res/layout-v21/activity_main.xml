@@ -53,8 +53,7 @@
         android:layout_marginRight="52px"
         android:background="@drawable/button_1_main_list"
         android:stateListAnimator="@null"
-        app:backgroundTint="@color/element_main_menu"
-        android:onClick="showPopup1" />
+        app:backgroundTint="@color/element_main_menu" />
 
     <View
         android:id="@+id/circle1_button_main"
