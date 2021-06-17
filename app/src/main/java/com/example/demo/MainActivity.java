@@ -106,4 +106,8 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
                 return false;
         }
     }
+    public  boolean onCrateOptionsMenuCoffeeMachine(Menu menu){
+        getMenuInflater().inflate(R.menu.popup_menu_button1_form_main, menu);
+        return true;
+    }
 }
