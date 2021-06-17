@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
         // show the popup window
         // which view you pass in doesn't matter, it is only used for the window tolken
         //popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0); это было изначально
-        popupWindow.showAtLocation(view, Gravity.BOTTOM|Gravity.LEFT, 0, 0);
+        popupWindow.showAtLocation(view, Gravity.BOTTOM|Gravity.LEFT, 120, 910);
 
         dimBehind(popupWindow);
 
@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         WindowManager.LayoutParams p = (WindowManager.LayoutParams) container.getLayoutParams();
         p.flags |= WindowManager.LayoutParams.FLAG_DIM_BEHIND;
-        p.dimAmount = 0.3f;
+        p.dimAmount = 0.5f;
         wm.updateViewLayout(container, p);
     }
 }
