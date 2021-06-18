@@ -64,8 +64,15 @@
 
     <TextView
         android:id="@+id/text1_machine_test"
+        android:text="@string/coffee_machine_theory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/exo_2"
+        android:lineHeight="54px"
+        android:textFontWeight="400"
+        android:textSize="45px"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
         android:layout_below="@id/heading_rectangle"
         android:layout_marginTop="74px"
         android:layout_marginLeft="95px"

@@ -1,9 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_menu"
     tools:context=".TestEspresso">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="65px"
+
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="36dp"
+        android:background="@color/white"
+        />
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="1080px"
+        android:layout_height="1742px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="179px"
+        android:background="@drawable/rectangle_1"
+        />
+
+    <!--это колхозный закрывающий прямоуголник снизу-->
+    <View
+        android:id="@+id/rectangle_0"
+        android:layout_width="1080.03dp"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="510dp"
+        android:background="@color/white"
+        />
+
+    <View
+        android:id="@+id/rect1_test"
+        android:layout_width="191dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/rectangle_1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="338px"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        android:background="@drawable/header1_for_test_windows"
+        android:foregroundGravity="center" />
+
+    <View
+        android:id="@+id/rect2_test"
+        android:layout_width="191dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/rect1_test"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="338px"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        android:background="@drawable/header2_for_test_windows" />
+
+    <TextView
+        android:id="@+id/heading_text_machine_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rect1_test"
+        android:layout_alignEnd="@+id/rect2_test"
+        android:layout_alignRight="@+id/rect2_test"
+        android:layout_marginLeft="355px"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/exo_2_semibold"
+        android:lineHeight="63px"
+        android:text="ЭСПРЕССО"
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:textSize="24sp" />
+</RelativeLayout>
