@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -28,8 +29,6 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
     private  Button buttonCoffeeGrinder;
     private  Button buttonCoffeeMachine;
     private  Button buttonMilk;
-    private Button buttonTheory;
-    private Button buttonTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,23 +70,6 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
                 openActivityMilk();
             }
         });
-        //тут удалить
-        buttonTheory = (Button) findViewById(R.id.theory_popup);
-        buttonTheory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivityCoffeeMachine();
-            }
-        });
-
-        buttonTest = (Button) findViewById(R.id.test_popup);
-        buttonTest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivityCoffeeMachine();
-            }
-        });
-        //до сюда
 
     }
     public void openActivityCoffee(){
@@ -135,6 +117,7 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
         LayoutInflater inflater = (LayoutInflater)
                 getSystemService(LAYOUT_INFLATER_SERVICE);
         View popupView = inflater.inflate(R.layout.activity_popup_window_from_main_menu, null);
+        Button theoryBtn = (Button)popupView.findViewById(R.id.theory_popup); // удалить если чо
 
         // create the popup window
         int width = LinearLayout.LayoutParams.WRAP_CONTENT;
@@ -148,6 +131,14 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
         popupWindow.showAtLocation(view, Gravity.BOTTOM|Gravity.LEFT, 120, 910);
 
         dimBehind(popupWindow);
+
+        theoryBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                openActivityCoffeeMachine();
+            }
+        });
 
         // dismiss the popup window when touched
         popupView.setOnTouchListener(new View.OnTouchListener() {
@@ -168,15 +159,10 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
         p.dimAmount = 0.5f;
         wm.updateViewLayout(container, p);
     }
-    //тут удалить
+
     public void openActivityCoffeeMachine(){
         Intent intent = new Intent(this, MainActivityCoffeeMachine.class);
         startActivity(intent);
     }
 
-    public void openActivityMachineTest(){
-        Intent intent = new Intent(this, Activity_Machine_Test.class);
-        startActivity(intent);
-    }
-    //до сюда
 }
