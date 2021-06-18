@@ -16,30 +16,30 @@ public class PopupWindowFromMainMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_popup_window_from_main_menu);
 
-        buttonTheory = (Button) findViewById(R.id.theory_popup);
-        buttonTheory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivityCoffeeMachine();
-            }
-        });
-
-        buttonTest = (Button) findViewById(R.id.test_popup);
-        buttonTest.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivityCoffeeMachine();
-            }
-        });
+//        buttonTheory = (Button) findViewById(R.id.theory_popup);
+//        buttonTheory.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openActivityCoffeeMachine();
+//            }
+//        });
+//
+//        buttonTest = (Button) findViewById(R.id.test_popup);
+//        buttonTest.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openActivityCoffeeMachine();
+//            }
+//        });
     }
 
-    public void openActivityCoffeeMachine(){
-        Intent intent = new Intent(this, MainActivityCoffeeMachine.class);
-        startActivity(intent);
-    }
-
-    public void openActivityMachineTest(){
-        Intent intent = new Intent(this, Activity_Machine_Test.class);
-        startActivity(intent);
-    }
+//    public void openActivityCoffeeMachine(){
+//        Intent intent = new Intent(this, MainActivityCoffeeMachine.class);
+//        startActivity(intent);
+//    }
+//
+//    public void openActivityMachineTest(){
+//        Intent intent = new Intent(this, Activity_Machine_Test.class);
+//        startActivity(intent);
+//    }
 }

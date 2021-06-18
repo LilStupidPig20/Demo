@@ -3,6 +3,7 @@ package com.example.demo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -37,6 +38,10 @@ public class MainCoffeeActivity extends AppCompatActivity {
                 getSystemService(LAYOUT_INFLATER_SERVICE);
         View popupView = inflater.inflate(R.layout.activity_popup_window_from_coffee, null);
 
+        Button theoryBtn = (Button)popupView.findViewById(R.id.theory_popup_espresso);
+        Button testBtn = (Button)popupView.findViewById(R.id.test_popup_espresso);
+        Button practiceBtn = (Button)popupView.findViewById(R.id.practice_popup_espresso);
+
         // create the popup window
         int width = LinearLayout.LayoutParams.WRAP_CONTENT;
         int height = LinearLayout.LayoutParams.WRAP_CONTENT;
@@ -49,6 +54,28 @@ public class MainCoffeeActivity extends AppCompatActivity {
         popupWindow.showAtLocation(view, Gravity.BOTTOM|Gravity.LEFT, 120, 910);
 
         dimBehind(popupWindow);
+
+        theoryBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v) {
+                openActivityTheoryEspresso();
+            }
+        });
+
+        testBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityTestEspresso();
+            }
+        });
+
+        practiceBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityPracticeEspresso();
+            }
+        });
 
         // dismiss the popup window when touched
         popupView.setOnTouchListener(new View.OnTouchListener() {
@@ -68,5 +95,20 @@ public class MainCoffeeActivity extends AppCompatActivity {
         p.flags |= WindowManager.LayoutParams.FLAG_DIM_BEHIND;
         p.dimAmount = 0.5f;
         wm.updateViewLayout(container, p);
+    }
+
+    public void openActivityTheoryEspresso(){
+        Intent intent = new Intent(this, TheoryEspresso.class);
+        startActivity(intent);
+    }
+
+    public void openActivityTestEspresso(){
+        Intent intent = new Intent(this, TestEspresso.class);
+        startActivity(intent);
+    }
+
+    public void openActivityPracticeEspresso(){
+        Intent intent = new Intent(this, PracticeEspresso.class);
+        startActivity(intent);
     }
 }
