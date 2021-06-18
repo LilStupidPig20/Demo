@@ -84,6 +84,7 @@
         android:textColor="#000000"
         app:backgroundTint="@color/element_main_menu" />
 
+    <!-- Первая кнопка / эспрессо-->
     <Button
         android:id="@+id/button1_main_list"
         android:layout_width="wrap_content"

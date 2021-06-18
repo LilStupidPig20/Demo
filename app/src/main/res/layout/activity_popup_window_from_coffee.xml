@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/theory_popup_espresso"
+        android:layout_width="977px"
+        android:layout_height="120px"
+        android:text="ТЕОРИЯ"
+        android:textSize="52px"
+        android:fontFamily="@font/exo_2"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:lineHeight="63px"
+        android:background="@drawable/design_popup_1"/>
+
+    <View
+        android:id="@+id/line1_espresso"
+        android:layout_width="977px"
+        android:layout_height="1px"
+        android:layout_below="@id/theory_popup_espresso"
+        android:background="@drawable/line_for_popup"
+        />
+
+    <Button
+        android:id="@+id/test_popup_espresso"
+        android:layout_width="977px"
+        android:layout_height="120px"
+        android:layout_below="@id/line1_espresso"
+        android:text="ТЕСТ"
+        android:textSize="52px"
+        android:fontFamily="@font/exo_2"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:lineHeight="63px"
+        android:background="@drawable/design_popup_2"/>
+
+    <View
+        android:id="@+id/line2_espresso"
+        android:layout_width="977px"
+        android:layout_height="1px"
+        android:layout_below="@id/test_popup_espresso"
+        android:background="@drawable/line_for_popup"
+        />
+
+
+    <Button
+        android:id="@+id/practice_popup_espresso"
+        android:layout_width="977px"
+        android:layout_height="120px"
+        android:layout_below="@id/line2_espresso"
+        android:text="ПРАКТИКА"
+        android:textSize="52px"
+        android:fontFamily="@font/exo_2"
+        android:textColor="@color/black"
+        android:textFontWeight="400"
+        android:lineHeight="63px"
+        android:background="@drawable/design_popup3"/>
+
+</RelativeLayout>

@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Demo">
-        <activity android:name=".PopupWindowFromMainMenu"></activity>
+        <activity android:name=".PracticeEspresso"></activity>
+        <activity android:name=".TestEspresso" />
+        <activity android:name=".TheoryEspresso" />
+        <activity android:name=".PopupWindowFromCoffee" />
+        <activity android:name=".PopupWindowFromMainMenu" />
         <activity android:name=".Activity_Machine_Test" />
         <activity android:name=".MainActivityCoffeeMachine" />
         <activity android:name=".MainActivityCoffeeGrinder" />
