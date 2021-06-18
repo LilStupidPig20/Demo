@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_menu"
-    tools:context=".MainActivity"
-    android:id="main">
+    tools:context=".MainActivity">
     <!--лучше указывать не в px в dp
     формула dp = px / (dpi / 160)
     у нас dpi = 420, значит
