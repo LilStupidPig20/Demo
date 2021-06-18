@@ -76,6 +76,7 @@
         android:layout_below="@id/heading_rectangle"
         android:layout_marginTop="74px"
         android:layout_marginLeft="95px"
+        android:layout_marginRight="95px"
         />
 
 </RelativeLayout>

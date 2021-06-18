@@ -34,7 +34,7 @@ public class PopupWindowFromMainMenu extends AppCompatActivity {
     }
 
     public void openActivityCoffeeMachine(){
-        Intent intent = new Intent(this, MainCoffeeActivity.class);
+        Intent intent = new Intent(this, MainActivityCoffeeMachine.class);
         startActivity(intent);
     }
 

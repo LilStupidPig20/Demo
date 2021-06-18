@@ -28,6 +28,9 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
     private  Button buttonCoffeeGrinder;
     private  Button buttonCoffeeMachine;
     private  Button buttonMilk;
+    private Button buttonTheory;
+    private Button buttonTest;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,6 +71,23 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
                 openActivityMilk();
             }
         });
+        //тут удалить
+        buttonTheory = (Button) findViewById(R.id.theory_popup);
+        buttonTheory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityCoffeeMachine();
+            }
+        });
+
+        buttonTest = (Button) findViewById(R.id.test_popup);
+        buttonTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivityCoffeeMachine();
+            }
+        });
+        //до сюда
 
     }
     public void openActivityCoffee(){
@@ -148,4 +168,15 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
         p.dimAmount = 0.5f;
         wm.updateViewLayout(container, p);
     }
+    //тут удалить
+    public void openActivityCoffeeMachine(){
+        Intent intent = new Intent(this, MainActivityCoffeeMachine.class);
+        startActivity(intent);
+    }
+
+    public void openActivityMachineTest(){
+        Intent intent = new Intent(this, Activity_Machine_Test.class);
+        startActivity(intent);
+    }
+    //до сюда
 }
