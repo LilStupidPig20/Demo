@@ -26,7 +26,12 @@ public class Activity_Machine_Test extends AppCompatActivity {
             public void onClick(View v){
                 int radioId = radioGroup.getCheckedRadioButtonId();
                 radioButton = findViewById(radioId);
-                textView.setText("Вы выбрали верный ответ");
+                if(radioId == R.id.radioButton1) {
+                    textView.setText("Вы выбрали верный ответ");
+                }
+                else{
+                    textView.setText("Вы выбрали верный ответ неверный ответ. Правильный ответ 100°C");
+                }
             }
         });
     }
