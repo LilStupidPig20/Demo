@@ -4,18 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.view.View;
-import android.widget.Toast;
 
-public class Activity_Machine_Test extends AppCompatActivity {
+public class Activity_Machine_Test6 extends AppCompatActivity {
+
     RadioGroup radioGroup;
     RadioButton radioButton;
     TextView textView;
-    private  Button buttonNext;
+    private Button buttonNext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

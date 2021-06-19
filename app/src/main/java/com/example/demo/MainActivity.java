@@ -73,6 +73,7 @@ public class MainActivity extends AppCompatActivity //implements PopupMenu.OnMen
 
     }
     public void openActivityCoffee(){
+
         Intent intent = new Intent(this, MainCoffeeActivity.class);
         startActivity(intent);
     }
