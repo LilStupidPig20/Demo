@@ -50,7 +50,7 @@ public class PracticeEspresso extends AppCompatActivity {
         // show the popup window
         // which view you pass in doesn't matter, it is only used for the window tolken
         //popupWindow.showAtLocation(view, Gravity.CENTER, 0, 0); это было изначально
-        popupWindow.showAtLocation(view, Gravity.BOTTOM|Gravity.LEFT, 120, 910);
+        popupWindow.showAtLocation(view, Gravity.BOTTOM|Gravity.LEFT, 125, -400);
 
         dimBehind(popupWindow);
 
