@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="797px"
+    android:layout_height="1078px"
+    tools:context=".MainEspresso_coffee_grinder">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="227dp"
+        android:layout_height="294dp"
+        app:srcCompat="@drawable/coffeemaker"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="240dp"
+        android:layout_height="73dp"
+        app:srcCompat="@drawable/button_send_answer_for_tests"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="148dp"
+        android:layout_height="74dp"
+        android:background="@null"
+        android:text="Перемолоть"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        tools:layout_editor_absoluteY="322dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
