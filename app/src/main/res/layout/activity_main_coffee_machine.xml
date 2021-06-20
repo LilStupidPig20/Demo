@@ -64,19 +64,18 @@
 
     <TextView
         android:id="@+id/text1_machine_test"
-        android:text="@string/coffee_machine_theory"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="475dp"
+        android:layout_below="@id/heading_rectangle"
+        android:layout_marginLeft="95px"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="95px"
         android:fontFamily="@font/exo_2"
         android:lineHeight="54px"
-        android:textFontWeight="400"
-        android:textSize="45px"
+        android:text="Вы засыпаете молотый кофе в рожок, или холдер, и трамбуете его. В кофеварках чалдового и капсульного типа в отсек загружается таблетка или чалда с прессованным кофейным порошком. В кофемашины засыпаются цельные зерна, которые перемалываются и направляются в заварное устройство, где молотый кофе трамбуется.  2. Вода для кофе поступает в бойлер и нагревается до температуры (92–25 градусов по Цельсию).  3. Компрессор нагнетает кипяток в раздаточную группу под давлением в 9–15 атмосфер.  "
         android:textAllCaps="true"
         android:textColor="@color/black"
-        android:layout_below="@id/heading_rectangle"
-        android:layout_marginTop="74px"
-        android:layout_marginLeft="95px"
-        android:layout_marginRight="95px"
-        />
+        android:textFontWeight="400"
+        android:textSize="50px" />
 
 </RelativeLayout>

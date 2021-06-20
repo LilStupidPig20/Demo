@@ -31,7 +31,7 @@ public class TestEspresso2 extends AppCompatActivity {
                     textView.setText("Вы выбрали верный ответ");
                 }
                 else{
-                    textView.setText("Вы выбрали верный ответ неверный ответ. Правильный ответ 100°C");
+                    textView.setText("Вы выбрали верный ответ неверный ответ. Правильный ответ резкий");
                 }
             }
 

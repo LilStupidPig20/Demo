@@ -27,11 +27,11 @@ public class TestEspresso6 extends AppCompatActivity {
             public void onClick(View v){
                 int radioId = radioGroup.getCheckedRadioButtonId();
                 radioButton = findViewById(radioId);
-                if(radioId == R.id.radioButton1) {
+                if(radioId == R.id.radioButton3) {
                     textView.setText("Вы выбрали верный ответ");
                 }
                 else{
-                    textView.setText("Вы выбрали верный ответ неверный ответ. Правильный ответ 100°C");
+                    textView.setText("Вы выбрали верный ответ неверный ответ. Правильный ответ 7-10");
                 }
             }
 

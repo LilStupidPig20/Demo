@@ -111,9 +111,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginBottom="115dp">
+        android:layout_marginEnd="-107dp"
+        android:layout_marginRight="-107dp"
+        android:layout_marginBottom="135dp">
 
 
         <RadioButton
@@ -129,7 +129,7 @@
             android:foregroundGravity="center_vertical|center|center_horizontal"
             android:gravity="center|center_vertical"
 
-            android:text="100°C"
+            android:text="Один раз в 2-3 месяца"
             android:textColor="#000000"
             android:textSize="24sp" />
 
@@ -146,7 +146,7 @@
             android:foregroundGravity="center"
             android:gravity="center|center_vertical"
 
-            android:text="110°C"
+            android:text="Один раз в 3-4 месяца"
             android:textColor="#000000"
             android:textSize="24sp" />
 
@@ -163,7 +163,7 @@
             android:foregroundGravity="center"
             android:gravity="center"
 
-            android:text="120°C"
+            android:text="Один раз в месяц"
             android:textColor="#000000"
             android:textSize="24sp" />
 
@@ -180,7 +180,7 @@
             android:foregroundGravity="center"
             android:gravity="center"
 
-            android:text="140°C"
+            android:text="Каждый день"
             android:textColor="#000000"
             android:textSize="24sp" />
     </RadioGroup>
@@ -197,7 +197,7 @@
         android:layout_marginRight="27dp"
         android:autoText="false"
         android:gravity="center"
-        android:text="В какой из вариантов написана безопасная температура работы кофемашина?"
+        android:text="Как часто нужно чистить внутренности кофемашины?"
         android:textColor="#000000"
         android:textSize="24sp" />
 

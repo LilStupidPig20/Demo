@@ -30,15 +30,16 @@
         />
 
     <!--это колхозный закрывающий прямоуголник снизу-->
+
     <View
         android:id="@+id/rectangle_0"
-        android:layout_width="1080.03dp"
-        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="510dp"
-        android:background="@color/white"
-        />
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="521dp"
+        android:background="@color/white" />
 
     <Button
         android:id="@+id/buttonNext"
@@ -49,11 +50,13 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="31dp"
-        android:layout_marginLeft="31dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="254dp"
-        android:layout_marginRight="254dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="255dp"
+        android:layout_marginRight="255dp"
+        android:layout_marginBottom="22dp"
         android:background="@drawable/button_send_answer_for_tests"
         android:stateListAnimator="@null"
         android:text="следующий вопрос" />
@@ -106,14 +109,14 @@
     <RadioGroup
 
         android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="437dp"
+        android:layout_height="259dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginBottom="115dp">
+        android:layout_marginEnd="-93dp"
+        android:layout_marginRight="-93dp"
+        android:layout_marginBottom="142dp">
 
 
         <RadioButton
@@ -129,9 +132,9 @@
             android:foregroundGravity="center_vertical|center|center_horizontal"
             android:gravity="center|center_vertical"
 
-            android:text="100°C"
+            android:text="С кусочком шоколада"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <RadioButton
             android:id="@+id/radioButton2"
@@ -146,9 +149,9 @@
             android:foregroundGravity="center"
             android:gravity="center|center_vertical"
 
-            android:text="110°C"
+            android:text="Со стаканом холодной воды"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <RadioButton
             android:id="@+id/radioButton3"
@@ -163,9 +166,9 @@
             android:foregroundGravity="center"
             android:gravity="center"
 
-            android:text="120°C"
+            android:text="Со стаканом молока"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
 
         <RadioButton
             android:id="@+id/radioButton4"
@@ -180,9 +183,9 @@
             android:foregroundGravity="center"
             android:gravity="center"
 
-            android:text="140°C"
+            android:text="С десертом"
             android:textColor="#000000"
-            android:textSize="24sp" />
+            android:textSize="22sp" />
     </RadioGroup>
 
     <TextView
@@ -192,14 +195,14 @@
         android:layout_below="@+id/rect2_test"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginRight="27dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
         android:autoText="false"
         android:gravity="center"
-        android:text="В какой из вариантов написана безопасная температура работы кофемашина?"
+        android:text="С чем принято подавать эспрессо? "
         android:textColor="#000000"
-        android:textSize="24sp" />
+        android:textSize="22sp" />
 
     <Button
         android:id="@+id/button"
@@ -208,9 +211,11 @@
         android:layout_alignTop="@+id/rectangle_0"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="51dp"
         android:layout_marginEnd="33dp"
         android:layout_marginRight="33dp"
+        android:layout_marginBottom="22dp"
         android:background="@drawable/button_send_answer_for_tests"
         android:stateListAnimator="@null"
         android:text="Ответить" />
