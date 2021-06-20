@@ -93,12 +93,12 @@
         android:layout_alignEnd="@+id/rect2_test"
         android:layout_alignRight="@+id/rect2_test"
         android:layout_marginLeft="355px"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
         android:fontFamily="@font/exo_2_semibold"
         android:lineHeight="63px"
-        android:text="КОФЕМАШИНА"
+        android:text="ЭСПРЕССО"
         android:textColor="@color/black"
         android:textFontWeight="600"
         android:textSize="24sp" />
@@ -129,7 +129,7 @@
             android:foregroundGravity="center_vertical|center|center_horizontal"
             android:gravity="center|center_vertical"
 
-            android:text="100°C"
+            android:text="20 мл"
             android:textColor="#000000"
             android:textSize="24sp" />
 
@@ -146,7 +146,7 @@
             android:foregroundGravity="center"
             android:gravity="center|center_vertical"
 
-            android:text="110°C"
+            android:text="30 мл"
             android:textColor="#000000"
             android:textSize="24sp" />
 
@@ -163,7 +163,7 @@
             android:foregroundGravity="center"
             android:gravity="center"
 
-            android:text="120°C"
+            android:text="40 мл"
             android:textColor="#000000"
             android:textSize="24sp" />
 
@@ -180,7 +180,7 @@
             android:foregroundGravity="center"
             android:gravity="center"
 
-            android:text="140°C"
+            android:text="50 мл"
             android:textColor="#000000"
             android:textSize="24sp" />
     </RadioGroup>
@@ -197,7 +197,7 @@
         android:layout_marginRight="27dp"
         android:autoText="false"
         android:gravity="center"
-        android:text="В какой из вариантов написана безопасная температура работы кофемашина?"
+        android:text="Какая порция у классического эспрессо?"
         android:textColor="#000000"
         android:textSize="24sp" />
 

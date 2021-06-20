@@ -19,7 +19,7 @@ public class Activity_Machine_Test3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_machine_test);
+        setContentView(R.layout.activity_machine_test3);
         radioGroup = findViewById(R.id.radioGroup);
         textView = findViewById(R.id.textView3);
         Button buttonApply = findViewById(R.id.button);
