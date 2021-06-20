@@ -5,7 +5,6 @@
     android:layout_height="1078px"
     tools:context=".MainEspresso_coffee_grinder">
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="227dp"
@@ -43,7 +42,7 @@
         tools:layout_editor_absoluteY="322dp" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/grindBtn"
         android:layout_width="148dp"
         android:layout_height="74dp"
         android:layout_alignBottom="@+id/imageView"
